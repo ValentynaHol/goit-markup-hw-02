@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" /> 
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <!--секция шапка-->
     <header>
-
-        <a href="./index.html">WebStudio</a>
         <nav>
-            <ul>
-                <li><a href="">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+        <a href="./index.html"><span class="logo">Web</span>Studio</a>
+        
+            <ul class="site-nav">
+                <li><a href="./studio.html" class="link">Студия</a></li>
+                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li><a href="./contacts.html" class="link">Контакты</a></li>
             </ul>
         </nav>
 
@@ -31,9 +33,9 @@
     <!--секция уникальный контент-->
     <main>
         <!--секция герой-->
-        <section>
-            <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button">Заказать услугу</button>
+        <section class="hero">
+            <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <button type="button" class="hero-button">Заказать услугу</button>
         </section>
 
 
@@ -67,7 +69,6 @@
                 </li>
             </ul>
         </section>
-
 
         <!--секция услуги-->
         <section>
@@ -122,7 +123,7 @@
 
     <!--подвал-->
     <footer>
-        <a href="">WebStudio</a>
+        <a href="./index.html"><span class="logo">Web</span>Studio</a>
         <ul>
             <li><a href="">г.Киев, пр-т Леси Украинки, 26</a></li>
             <li><a href="mailto:info@devstudio.com">info@example.com</a></li>

@@ -1,0 +1,71 @@
+
+body {
+    font-family:;
+    background-color:#9f95955b;
+    color:#212121;
+}
+
+ul {
+  list-style: none;
+}
+
+/* секция герой */
+
+.hero-title {
+    color: #FFFFFF;
+
+}
+
+.hero-button {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+
+
+
+
+
+.logo {
+    color:#2196F3;
+}
+
+
+
+
+.site-nav .link {
+    color:#212121;
+
+}
+
+
+.site-nave .link:hover {
+    color:#2196F3;
+}
+
+
+
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575;*/
+/* белый #FFFFFF  */
+/* акцент #2196F3 / #FFFFFF / #000000  */
+/* вторичный цвет фона ; 
+
+
+logo black - #000000
+logo blue - #2196F3
+grye - #757575
+
+white - #FFFFFF
+link footer - rgba(255, 255, 255, 0.6);
+tel footer - rgba(255, 255, 255, 0.6);
+
+
+*/
+
+
+
+
+
+
+
