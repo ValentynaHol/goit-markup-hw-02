@@ -1,15 +1,339 @@
 
 body {
-    font-family:;
-    background-color:#9f95955b;
+  font-family: 'Roboto', 'Raleway', sans-serif;
+}
+
+.list {
+  list-style: none; 
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*----------------------------------------HEADER-------------------------------------------*/
+
+.site-header {
+  background-color: #FFFFFF;
+}
+
+.site-logo {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color:#000000;
+  text-decoration: none;
+}
+
+.logo {
+  color:#2196F3;
+}
+
+
+.site-logo:hover,
+.site-logo:focus {
+color: #757575;
+}
+
+.site-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.site-link:hover,
+.site-link:focus {
+    color: #2196F3;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #2196F3;
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;  
+  color: #757575;    
+}
+
+/*-----------------------------------------HERO---------------------------------------------*/
+
+.hero {
+  background-color:#2F303A;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;    
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;  
+}
+
+
+.hero-button:hover,
+.hero-button:focus {
+  color:#ffffff;
+}
+
+/*-------------------------------------ADVANTAGES------------------------------------------*/
+
+.advant-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.describes {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;  
+}
+
+/*--------------------------------------SERVICE------------------------------------------*/
+
+.serv-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;    
+}
+
+/*------------------------------------------TEAM---------------------------------------*/
+
+.team {
+  background-color: #F5F4FA;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-lead {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*--------------------------------------CONTACT-FOOTER--------------------------------------*/
+
+.contact-footer {
+  background-color:#2F303A;
+}
+
+.site-logo-foot {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.site-logo-foot:hover,
+.site-logo-foot:focus {
+color: #000000;
+}
+
+
+.contact-address-map {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color:  rgba(255, 255, 255, 0.6);
+}
+
+.contact-address-map:hover,
+.contact-address-map:focus,
+.contact-address-mail:hover,
+.contact-address-mail:focus,
+.contact-address-tel:hover,
+.contact-address-tel:focus {
+  color: #ffffff;
+}
+
+
+.contact-address-mail,
+.contact-address-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*-----------------------
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+    font-family: roboto;
+    background-color:#E5E5E5;
     color:#212121;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
-/* секция герой */
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
+.site-header{
+    background-color: #FFFFFF;
+}
+
+.site-logo {
+    
+    font-size: 26px;
+    text-decoration: none;
+    color:#000000;
+}
+
+.logo {
+    color:#2196F3;
+}
+
+.site-link {
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 1.14;
+ letter-spacing: 0.02em;
+ color: #212121;
+}
+
+.site-link:hover {
+color:#2196F3;
+}
+
+.site-link:focus {
+    color:#2196F3;
+    }
+
+.contact-link {
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.contact-link:hover{
+color:#2196F3;
+}
+
+.hero {
+    background-color:#2F303A;
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.contact-footer {
+    background-color:#2F303A;
+}
+
+.site-logo-foot {
+    font-family: 'Raleway';
+    font-size: 26px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+*/
+
+
+
+
+
+
+/* секция герой 
 
 .hero-title {
     color: #FFFFFF;
@@ -21,27 +345,25 @@ ul {
     background-color: #2196F3;
 }
 
+*/
 
 
 
 
 
-.logo {
-    color:#2196F3;
-}
 
 
 
 
-.site-nav .link {
-    color:#212121;
-
-}
 
 
-.site-nave .link:hover {
-    color:#2196F3;
-}
+
+
+
+
+
+
+
 
 
 
@@ -59,6 +381,8 @@ grye - #757575
 white - #FFFFFF
 link footer - rgba(255, 255, 255, 0.6);
 tel footer - rgba(255, 255, 255, 0.6);
+
+шрифт - Raleway 700, Roboto – 400, 500, 700 і 900 
 
 
 */
