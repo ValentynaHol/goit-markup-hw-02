@@ -1,6 +1,14 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #18a0fb;
+    --accent-second-color: #ffffff;
+
+}
 
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
+  color: #757575;
 }
 
 .list {
@@ -10,6 +18,19 @@ body {
 .link {
   text-decoration: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+  }
 
 /*----------------------------------------HEADER-------------------------------------------*/
 
@@ -28,13 +49,7 @@ body {
 }
 
 .logo {
-  color:#2196F3;
-}
-
-
-.site-logo:hover,
-.site-logo:focus {
-color: #757575;
+  color:var(--accent-color);
 }
 
 .site-link {
@@ -42,17 +57,17 @@ color: #757575;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .site-link:hover,
 .site-link:focus {
-    color: #2196F3;
+  color: var(--accent-color);
 }
 
 .contact-link:hover,
 .contact-link:focus {
-    color: #2196F3;
+  color: var(--accent-color);
 }
 
 .contact-link {
@@ -60,7 +75,7 @@ color: #757575;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;  
-  color: #757575;    
+  color: var(--primary-text-color);    
 }
 
 /*-----------------------------------------HERO---------------------------------------------*/
@@ -75,25 +90,27 @@ color: #757575;
   line-height: 1.36;    
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--accent-second-color);
 }
 
 .hero-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background: #2196F3;
+  color: var(--accent-second-color);
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;  
+  border-radius: 4px;
+  cursor: pointer;  
 }
 
 
 .hero-button:hover,
 .hero-button:focus {
-  color:#ffffff;
+  background-color: #188CE8;
 }
 
 /*-------------------------------------ADVANTAGES------------------------------------------*/
@@ -104,14 +121,13 @@ color: #757575;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .describes {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;  
 }
 
 /*--------------------------------------SERVICE------------------------------------------*/
@@ -121,7 +137,7 @@ color: #757575;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #212121;    
+  color: var(--title-text-color);    
 }
 
 /*------------------------------------------TEAM---------------------------------------*/
@@ -135,7 +151,7 @@ color: #757575;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .team-lead {
@@ -143,14 +159,14 @@ color: #757575;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /*--------------------------------------CONTACT-FOOTER--------------------------------------*/
@@ -165,17 +181,15 @@ color: #757575;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color:#ffffff;
+  color: var(--accent-second-color);
   text-decoration: none;
 }
 
-.site-logo-foot:hover,
-.site-logo-foot:focus {
-color: #000000;
-}
+
 
 
 .contact-address-map {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -188,208 +202,54 @@ color: #000000;
 .contact-address-mail:focus,
 .contact-address-tel:hover,
 .contact-address-tel:focus {
-  color: #ffffff;
+  color: var(--accent-second-color);
 }
 
 
 .contact-address-mail,
 .contact-address-tel {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*-----------------------
+/*-----------------------PORTFOLIO--------------------------*/
 
 
+.filter {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  
+}
 
+.filter:hover,
+.filter:focus {
+color:#ffffff;
+background: var(--accent-color);
+}
 
+/*-----------------GALLERY-------------*/
 
+.gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);  
+}
 
-
+.gallery-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}    
     
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body {
-    font-family: roboto;
-    background-color:#E5E5E5;
-    color:#212121;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-
-.site-header{
-    background-color: #FFFFFF;
-}
-
-.site-logo {
-    
-    font-size: 26px;
-    text-decoration: none;
-    color:#000000;
-}
-
-.logo {
-    color:#2196F3;
-}
-
-.site-link {
- font-weight: 500;
- font-size: 14px;
- line-height: 1.14;
- letter-spacing: 0.02em;
- color: #212121;
-}
-
-.site-link:hover {
-color:#2196F3;
-}
-
-.site-link:focus {
-    color:#2196F3;
-    }
-
-.contact-link {
-font-family: 'Roboto';
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
-}
-
-.contact-link:hover{
-color:#2196F3;
-}
-
-.hero {
-    background-color:#2F303A;
-}
-
-.team {
-    background-color: #F5F4FA;
-}
-
-.contact-footer {
-    background-color:#2F303A;
-}
-
-.site-logo-foot {
-    font-family: 'Raleway';
-    font-size: 26px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-*/
-
-
-
-
-
-
-/* секция герой 
-
-.hero-title {
-    color: #FFFFFF;
-
-}
-
-.hero-button {
-    color: #FFFFFF;
-    background-color: #2196F3;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* цвет основного текста #212121 */
-/* вторичный цвет текста #757575;*/
-/* белый #FFFFFF  */
-/* акцент #2196F3 / #FFFFFF / #000000  */
-/* вторичный цвет фона ; 
-
-
-logo black - #000000
-logo blue - #2196F3
-grye - #757575
-
-white - #FFFFFF
-link footer - rgba(255, 255, 255, 0.6);
-tel footer - rgba(255, 255, 255, 0.6);
-
-шрифт - Raleway 700, Roboto – 400, 500, 700 і 900 
-
-
-*/
-
-
-
-
-
-
-
